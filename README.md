@@ -1,45 +1,55 @@
-# code-sample-description
-This sample repo will show you how to easily do X with Nylas.
+# Address Book with Decker and Ruby
+
+This project will show you how to Build an old-fashioned agenda using Decker (HyperCard) and Ruby.
 
 ## Setup
 
 ### System dependencies
 
-- Add System dependencies
+- Ruby 3.1.1 or greater
 
 ### Gather environment variables
 
-You'll need the following values from the Nylas Dashboard:
+You'll need the following values:
 
 ```text
-ACCESS_TOKEN = ""
 CLIENT_ID = ""
 CLIENT_SECRET = ""
+ACCESS_TOKEN = ""
 ```
 
-Add the above values to a `.env` file.
+Add the above values to a new `.env` file:
 
-The `.env` file is added to `.gitignore`. Ensure to store these values securely.
+```bash
+$ touch .env # Then add your env variables
+```
 
 ### Install dependencies
 
-[replace with install steps]
+We need to install [Decker](https://internet-janitor.itch.io/decker/purchase)
+
+The download and intall [Lilt](https://github.com/JohnEarnest/Decker)
+
 ```bash
-$ npm i
+$ make lilt && make install
+```
+
+Also, we're going to need imagemagick
+
+$ brew install imagemagick
+
+### Install Ruby dependencies
+
+```bash
+$ gem install dotenv
+$ gem install mini_magick
+$ gem install nylas
 ```
 
 ## Usage
 
-The recommended way to use this sample is ...
+Clone the repository. Go to your terminal and type:
 
-You can also clone the repository ...
-
-You'll find more detailed instructions ...
-
-## Get support
-
-If you found a bug or want to suggest a new [feature/use case/sample], please file an issue.
-
-## Learn more
-
-Visit our [Nylas documentation](https://developer.nylas.com/) to learn more.
+```bash
+$ ruby address_book.rb
+```
