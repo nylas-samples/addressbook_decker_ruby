@@ -13,9 +13,8 @@ This project will show you how to Build an old-fashioned agenda using Decker (Hy
 You'll need the following values:
 
 ```text
-CLIENT_ID = ""
-CLIENT_SECRET = ""
-ACCESS_TOKEN = ""
+V3_TOKEN = ""
+GRANT_ID = ""
 ```
 
 Add the above values to a new `.env` file:
@@ -44,6 +43,7 @@ $ brew install imagemagick
 $ gem install dotenv
 $ gem install mini_magick
 $ gem install nylas
+$ gem install open-uri
 ```
 
 ## Usage
